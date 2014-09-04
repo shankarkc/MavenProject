@@ -18,12 +18,14 @@ public class AppTest extends TestCase {
 	 */
 	public AppTest(String testName) {
 		super(testName);
+
 	}
 
 	/**
 	 * @return the suite of tests being tested
 	 */
 	public static Test suite() {
+		BasicConfigurator.configure();
 		return new TestSuite(AppTest.class);
 	}
 
@@ -31,9 +33,33 @@ public class AppTest extends TestCase {
 	 * Rigourous Test :-)
 	 */
 	public void testApp() {
-		BasicConfigurator.configure();
-		logger.debug("Starting the test");
+		
+		logger.debug("Starting the test testApp");
 		assertTrue( App.now().length() > 0 );
-		logger.info("ending the test");
+		logger.info("ending the test testApp");
+	}
+	
+	public void testMathAdd() 
+	{
+		Math math = new Math();
+		logger.debug("Starting the test testMathAdd");
+		assertTrue( 2 == (math.add(1, 1)));
+		logger.debug("ending the test testMathAdd");
+	}
+	
+	public void testMathSub() 
+	{
+		logger.debug("Starting the test testMathSub");
+		Math math = new Math();
+		assertTrue( 1 == (math.subtract(2, 1)));
+		logger.debug("ending the test testMathSub");
+	}
+	
+	public void testMathMultiply() 
+	{
+		logger.debug("Starting the test testMathMultiply");
+		Math math = new Math();
+		assertTrue( 4 == (math.multiply(2, 2)));
+		logger.debug("ending the test testMathMultiply");
 	}
 }
