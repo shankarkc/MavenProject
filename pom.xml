@@ -2,7 +2,7 @@
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
      <name>Maven Root Project</name>
          <url>http://www.ariba.com/</url>
-     <modelVersion>4.0.0</modelVersion>
+     <modelVersion>1.0</modelVersion>
    
      <groupId>com.ariba.maven2example</groupId>
         <version>1.0</version>
@@ -13,4 +13,24 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
        <module>maven2example_logic</module>
        <module>maven2example_webapp</module>
      </modules>
+     
+      <build>
+        <plugins>
+            <plugin>
+            	<groupId>com.atlassian.maven.plugins</groupId>
+				<artifactId>maven-clover2-plugin</artifactId>
+				<version>4.0</version>
+				<inherited>true</inherited>
+				<configuration>
+					
+					<generateXml>true</generateXml>
+					<licenseLocation>/Users/i306565/GitHub/MavenProject/clover.license</licenseLocation>
+				</configuration>
+
+            </plugin>
+        </plugins>
+    </build>
  </project>
+ 
+ 
+ 

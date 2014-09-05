@@ -9,7 +9,12 @@
 
 	<name>maven2example_logic</name>
 	<url>http://maven.apache.org</url>
-
+	<parent>
+		<groupId>com.ariba.maven2example</groupId>
+		<artifactId>maven2example_package</artifactId>
+		<version>1.0</version>
+		<relativePath>../</relativePath>
+	</parent>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
