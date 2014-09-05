@@ -21,6 +21,7 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -41,6 +42,14 @@
 				<configuration>
 					<source>1.7</source>
 					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.atlassian.maven.plugins</groupId>
+				<artifactId>maven-clover2-plugin</artifactId>
+				<version>4.0.0</version>
+				<configuration>
+					<licenseLocation>/Users/i306565/GitHub/MavenProject/clover.license</licenseLocation>
 				</configuration>
 			</plugin>
 		</plugins>

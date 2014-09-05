@@ -8,15 +8,15 @@ import org.apache.log4j.Logger;
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase {
-	static final Logger logger = Logger.getLogger(AppTest.class);
+public class Math2Test extends TestCase {
+	static final Logger logger = Logger.getLogger(Math2Test.class);
 	/**
 	 * Create the test case
 	 * 
 	 * @param testName
 	 *            name of the test case
 	 */
-	public AppTest(String testName) {
+	public Math2Test(String testName) {
 		super(testName);
 
 	}
@@ -26,17 +26,18 @@ public class AppTest extends TestCase {
 	 */
 	public static Test suite() {
 		BasicConfigurator.configure();
-		return new TestSuite(AppTest.class);
+		return new TestSuite(Math2Test.class);
 	}
 
 	/**
 	 * Rigourous Test :-)
 	 */
-	public void testApp() {
 		
-		logger.debug("Starting the test testApp");
-		assertTrue( App.now().length() > 0 );
-		logger.info("ending the test testApp");
+	public void testMath2Multiply() 
+	{
+		logger.debug("Starting the test testMath2Multiply");
+		Math2 math2 = new Math2();
+		assertTrue( 4 == (math2.multiply(2, 2)));
+		logger.debug("ending the test testMath2Multiply");
 	}
-
 }
