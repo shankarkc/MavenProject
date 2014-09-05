@@ -17,24 +17,10 @@
 		<dependency>
 			<groupId>com.atlassian.maven.plugins</groupId>
 			<artifactId>maven-clover2-plugin</artifactId>
-			<version>4.0.0</version>
+			<version>4.0.1</version>
 		</dependency>
 
 	</dependencies>
-<!-- 	<build> -->
-<!-- 		<plugins> -->
-<!-- 			<plugin> -->
-<!-- 				<groupId>com.atlassian.maven.plugins</groupId> -->
-<!-- 				<artifactId>maven-clover2-plugin</artifactId> -->
-<!-- 				<version>4.0</version> -->
-<!-- 				<configuration> -->
-<!-- 					<generateXml>true</generateXml> -->
-<!-- 					<licenseLocation>/Users/i306565/GitHub/MavenProject/clover.license</licenseLocation> -->
-<!-- 				</configuration> -->
-<!-- 			</plugin> -->
-<!-- 		</plugins> -->
-<!-- 	</build> -->
-
     
 </project>
  

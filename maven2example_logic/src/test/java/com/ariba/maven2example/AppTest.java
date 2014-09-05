@@ -3,13 +3,14 @@ package com.ariba.maven2example;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 /**
  * Unit test for simple App.
  */
 public class AppTest extends TestCase {
-	static final Logger logger = Logger.getLogger(AppTest.class);
+	Logger logger = LoggingFactory.getLogger();
 	/**
 	 * Create the test case
 	 * 
@@ -25,7 +26,6 @@ public class AppTest extends TestCase {
 	 * @return the suite of tests being tested
 	 */
 	public static Test suite() {
-		BasicConfigurator.configure();
 		return new TestSuite(AppTest.class);
 	}
 

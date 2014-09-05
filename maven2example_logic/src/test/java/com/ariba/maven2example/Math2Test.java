@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
  * Unit test for simple App.
  */
 public class Math2Test extends TestCase {
-	static final Logger logger = Logger.getLogger(Math2Test.class);
+	Logger logger = LoggingFactory.getLogger();
 	/**
 	 * Create the test case
 	 * 
@@ -25,7 +25,7 @@ public class Math2Test extends TestCase {
 	 * @return the suite of tests being tested
 	 */
 	public static Test suite() {
-		BasicConfigurator.configure();
+		
 		return new TestSuite(Math2Test.class);
 	}
 

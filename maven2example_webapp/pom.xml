@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>com.atlassian.maven.plugins</groupId>
 			<artifactId>maven-clover2-plugin</artifactId>
-			<version>4.0.0</version>
+			<version>4.0.1</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -70,7 +70,7 @@
 			<plugin>
 				<groupId>com.atlassian.maven.plugins</groupId>
 				<artifactId>maven-clover2-plugin</artifactId>
-				<version>4.0.0</version>
+				<version>4.0.1</version>
 				<configuration>
 					<licenseLocation>/Users/i306565/GitHub/MavenProject/clover.license</licenseLocation>
 				</configuration>
