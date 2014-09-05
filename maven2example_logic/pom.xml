@@ -2,14 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>maven2example_logic</artifactId>
-	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>maven2example_logic</name>
 	<url>http://maven.apache.org</url>
 	<parent>
-		<groupId>com.ariba.maven2example</groupId>
-		<artifactId>maven2example_package</artifactId>
+    <groupId>com.ariba.maven2example</groupId>
+     <artifactId>maven2example_package</artifactId>
 		<version>1.0</version>
 		<relativePath>../</relativePath>
 	</parent>

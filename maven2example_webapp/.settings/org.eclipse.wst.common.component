@@ -4,9 +4,6 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="maven2example_logic-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/maven2example_logic/maven2example_logic">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="maven2example_webapp"/>
         <property name="java-output-path" value="/maven2example_webapp/target/classes"/>
     </wb-module>
