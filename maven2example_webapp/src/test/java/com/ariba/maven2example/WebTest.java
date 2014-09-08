@@ -66,15 +66,16 @@ public class WebTest extends TestCase {
         // Go to the Google Suggest home page
         maximizeBrowserWindow(driver);
         driver.get("http://localhost:8080/MavenProject/index.jsp");
+        WebElement message = driver.findElement(By.tagName("h2"));
+        logger.info("Yey I got text" + message.getText());
+        assertTrue( message.getText().toLowerCase().equals("super fancy clock by shankar"));
         try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        WebElement message = driver.findElement(By.tagName("h2"));
-        logger.info("Yey I got text" + message.getText());
-        assertTrue( message.getText().toLowerCase().equals("super fancy clock by shankar"));
+
         
         
         
