@@ -7,8 +7,8 @@
 	<name>maven2example_logic</name>
 	<url>http://maven.apache.org</url>
 	<parent>
-    <groupId>com.ariba.maven2example</groupId>
-     <artifactId>maven2example_package</artifactId>
+		<groupId>com.ariba.maven2example</groupId>
+		<artifactId>maven2example_package</artifactId>
 		<version>1.0</version>
 		<relativePath>../</relativePath>
 	</parent>
@@ -52,6 +52,10 @@
 				<version>4.0.1</version>
 				<configuration>
 					<licenseLocation>/Users/i306565/GitHub/MavenProject/clover.license</licenseLocation>
+
+					<snapshot>/Users/i306565/.clover/atlassian-plugins-clover.snapshot</snapshot>
+					<singleCloverDatabase>true</singleCloverDatabase>
+
 				</configuration>
 			</plugin>
 		</plugins>

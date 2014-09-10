@@ -73,6 +73,8 @@
 				<version>4.0.1</version>
 				<configuration>
 					<licenseLocation>/Users/i306565/GitHub/MavenProject/clover.license</licenseLocation>
+					<snapshot>/Users/i306565/.clover/atlassian-plugins-clover.snapshot</snapshot>
+					<singleCloverDatabase>true</singleCloverDatabase>
 				</configuration>
 
 			</plugin>
