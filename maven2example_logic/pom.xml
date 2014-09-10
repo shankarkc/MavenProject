@@ -56,6 +56,9 @@
 					<snapshot>/Users/i306565/.clover/atlassian-plugins-clover.snapshot</snapshot>
 					<singleCloverDatabase>true</singleCloverDatabase>
 
+					<generatePdf>true</generatePdf>
+					<generateXml>true</generateXml>
+					<generateHtml>true</generateHtml>
 				</configuration>
 			</plugin>
 		</plugins>
